@@ -1,0 +1,365 @@
+/* Importando fuente para logo de empresa ubicado en header */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital@1&display=swap');
+
+/* Reseteo de CSS */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.grilla {
+    display: grid;
+    grid-template:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+
+}
+
+
+a {
+    text-decoration: none;
+    color: #01472e;
+}
+
+body {
+    background-image: url(../img/wall.png);
+}
+
+
+
+.header {
+    background-image: url(../img/autos.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    grid-area: header;
+}
+
+.h-s {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+}
+
+h1 {
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(201, 200, 200);
+    font-size: 35px;
+    margin: 0px 10px 0px 20px;
+}
+
+h2 {
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(201, 200, 200);
+    font-size: 30px;
+    margin: 0px 20px 0px 20px;
+}
+
+.bars {
+    display: block;
+    padding: 10px;
+    margin: 0px 20px 0px 0px;
+}
+
+
+/* Comienzo de estilos de barra de navegación */
+.nav__links {
+    display: flex;
+    justify-content: end;
+    align-items: baseline;
+    list-style-type: none;
+    background-color: #333;
+    font-size: 17px;
+    border-radius: 20px 20px 0px 0px;
+    border-bottom: solid 5px crimson;
+
+
+}
+
+
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.nav__links a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav__links a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.nav__link--active {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 16px;
+}
+
+li {
+    display: inline;
+}
+
+/* Fin de estilos de barra de navegación */
+
+.div-first {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.cartel1 {
+    background-color: rgb(117, 117, 117);
+    padding: 1px;
+    width: 35vw;
+    border: solid 2px rgb(66, 66, 66);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+}
+
+
+.img1 {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    width: 40vw;
+    background-color: rgb(117, 117, 117);
+    border-radius: 20px;
+    border: solid rgb(66, 66, 66) 2px;
+}
+
+.img- {
+    margin-left: 20%;
+    padding: 20px;
+
+    background-color: rgb(117, 117, 117);
+    border-radius: 20px;
+    border: solid rgb(66, 66, 66) 2px;
+}
+
+.img-about {
+
+    margin-left: 20%;
+    padding: 10px;
+    width: 70vw;
+    background-color: rgb(117, 117, 117);
+    border-radius: 20px;
+    border: solid rgb(66, 66, 66) 2px;
+
+}
+
+.cartel {
+    background-color: rgb(117, 117, 117);
+    padding: 1px;
+    width: 75vw;
+    margin: auto;
+    border: solid 2px rgb(66, 66, 66);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.img {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(117, 117, 117);
+    border-radius: 20px;
+    border: solid rgb(66, 66, 66) 2px;
+}
+
+
+
+
+/* Estilo para tablas */
+.tabla {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+
+    background-color: rgb(167, 165, 165);
+    border-radius: 10px;
+    width: 90vw;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+table th {
+    background-color: rgb(117, 117, 117);
+    border-radius: 10px;
+}
+
+/* Fin de estilo para tablas */
+
+
+
+
+/* Estilos del footer */
+.footer {
+    display: flex;
+    justify-content: end;
+    background-color: #333;
+    color: white;
+    font-size: 15px;
+    text-align: right;
+    height: auto;
+    margin-top: 10px;
+}
+
+.footer a {
+
+    color: white;
+    text-decoration: none;
+    padding: 0px 10px 0px 10px;
+
+
+}
+
+.footer div {
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    margin: 10px;
+    padding: 0px 15px 0px 0px;
+
+}
+
+.footer p {
+    display: flex;
+    align-items: center;
+    padding-right: 5vw;
+
+}
+
+/* Fin de estilos del footer
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .div-first {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .cartel1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1px;
+        width: 80vw;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .img1 {
+        width: 80vw;
+    }
+
+    .img-about {
+        width: 70vw;
+
+    }
+
+    .footer {
+        justify-content: center;
+    }
+
+    .footer div {
+        display: none;
+    }
+
+    i {
+        color: white;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    h2 {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .h-s {
+        display: flex;
+
+    }
+
+    /* .nav {
+        display: flex;
+
+    } */
+
+    .nav__links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav ul {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 4rem;
+        margin-right: 0;
+        font-weight: 600;
+        margin-right: 10px;
+    }
+
+    .nav__link--active {
+
+        padding: 3px;
+
+    }
+
+    .bars {
+        display: inline;
+        justify-content: flex-end;
+        color: #ddd;
+    }
+
+    .bars:hover ul {
+        color: red;
+        display: flex;
+
+    }
+
+    .nav__links a {
+
+        color: white;
+        padding: 5px;
+        text-decoration: none;
+    }
+
+    .nav__link--active {
+        background-color: #04AA6D;
+        color: white;
+
+    }
+}

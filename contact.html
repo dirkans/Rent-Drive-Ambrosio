@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link a CSS con estilos -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>Rent&Drive - Alquiler de autos</title>
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="img/icon.png">
+
+</head>
+
+<body>
+    <div class="grilla">
+        <header class="header">
+            <div class="h-s">
+                <h1>Rent&Drive</h1>
+                <h2>Alquiler de autos</h2>
+            </div>
+
+
+            <!-- .nav=> Menu para resoluciones de escritorio -->
+            <div class="nav">
+                <!-- Menu superior con links -->
+                <i class="bars fa fa-bars w3-xxxlarge">
+                    <ul class="nav__links">
+                        <li class="nav__link"><a href="index.html">Inicio</a></li>
+                        <li class="nav__link"><a href="about.html">La Empresa</a></li>
+                        <li class="nav__link"><a href="flota.html">Nuestros Vehículos</a></li>
+                        <li class="nav__link"><a href="contratar.html">Alquilar ahora!</a></li>
+                        <li class="nav__link--active">Contáctenos</li>
+                    </ul>
+                </i>
+            </div>
+        </header>
+
+        <main>
+            <h3>Contáctenos</h3>
+            <p>Su consulta será respondida lo antes posible</p>
+
+            <form method="GET">
+                <input type="text" name="nombre" placeholder="Nombre">
+                <br>
+                <input type="text" name="apellido" placeholder="Apellido">
+                <br>
+                <select name="tipodoc">
+                    <option value="dni">DNI</option>
+                    <option value="ci">CI</option>
+                    <option value="pasaporte">Pasaporte</option>
+                </select>
+                <input type="number" name="nrodoc" placeholder="Número de Documento">
+                <br>
+                <p>Porfavor indique que vehículo desea alquilar</p>
+                <select name="vehiculo">
+                    <option value="prisma">Chevrolet Prisma</option>
+                    <option value="cruze">Chevrolet Cruze</option>
+                    <option value="hilux">Toyota Hilux</option>
+                    <option value="sprinter">Mercedes-Benz Sprinter</option>
+
+                </select>
+                <input type="number" name="dias" placeholder="Cant. de días">
+                <br>
+                <br>
+                <input type="checkbox" name="leido" required>
+                <p>Cumplo con los requisitos de la sección <a href="contratar.html">Alquilar Ahora!</a>
+                </p>
+                <br>
+
+                <br>
+                <input type="reset">
+                <input type="submit">
+                <br>
+            </form>
+
+
+        </main>
+
+        <!-- Comienzo del footer -->
+        <footer class="footer">
+            <p>Copyright 2021©</p>
+            <div>
+                <!-- Links a redes -->
+                <a href="http://www.facebook.com" target=_blank>Facebook!</a>
+                <a href="http://www.instagram.com" target=_blank>Instagram</a>
+                <a href="http://maps.google.com" target=_blank>Nuestra ubicación</a>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
