@@ -47,8 +47,30 @@ h1 {
     display: flex;
     font-family: 'Bebas Neue', cursive;
     color: rgb(201, 200, 200);
-    font-size: 35px;
+    font-size:45px;
     margin: 0px 10px 0px 20px;
+    animation-name: logo-move;
+    animation-iteration-count: infinite;
+    animation-duration:5s;
+    animation-timing-function: linear;
+    animation-delay: 5s;
+}
+
+@keyframes logo-move {
+    0% {
+        transform: translate(0px, 0px);
+        color: rgb(201,200,200);
+    }
+
+    50% {
+        transform: translate(100px, 0px);
+        color: salmon;
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+        color: rgb(201,200,200);
+    }
 }
 
 h2 {
@@ -99,6 +121,7 @@ h2 {
 .nav__links a:hover {
     background-color: #ddd;
     color: black;
+    transition: .8s
 }
 
 .nav__link--active {
